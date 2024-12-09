@@ -1,0 +1,149 @@
+/* General Styles */
+body {
+    background-color: #fff6e0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #96a379;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.navbar .menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    font-family: 'Tahoma', serif;
+}
+
+.navbar .menu a:hover {
+    transform: scale(1.2);
+}
+
+/* Sección inferior */
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.section-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.section-text h2 {
+    color: #5f3f2e;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Consolas', monospace;
+}
+
+.section-text p {
+    color: #000000;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.language-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffffd7;
+    border: 2px solid #96a379;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+/* Títulos de lenguaje */
+.language-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+  
+/* Listas */
+.language-section ul {
+    margin: 0;
+    padding: 0 20px;
+    list-style-type: disc;
+}
+  
+.language-section ul li {
+    margin-bottom: 10px;
+}
+  
+/* Divisor */
+.divider {
+    margin: 40px 0;
+    border: 1px solid #5f3f2e;
+}
+
+.section-images {
+    justify-content: center;
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    padding-right: 20px
+}
+
+.section-images img {
+    width: 25%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+}

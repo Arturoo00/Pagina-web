@@ -1,0 +1,9 @@
+https://desarrollodevideojuegos.odoo.com/
+https://colorhunt.co/palette/fff8e8f7eed3aab396674636
+
+Video centrado
+Display none texto inicio
+Smooth cuando desplazo
+
+Opcional:
+-Quitar texto, girar la imagen de al lado y cuando se gire que por el otro lado salga un texto que es el que previamente he quitado

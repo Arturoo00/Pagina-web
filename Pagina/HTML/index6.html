@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pago</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import "index6.css";
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Formulario de Pago</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name" minlength="1" maxlength="25" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required pattern="^[^@]+@[^@]+\.[^@]+$" title="El correo electrónico debe contener un '@' y un '.'">
+            </div>
+
+            <div class="form-group">
+                <label for="card">Número de tarjeta:</label>
+                <input type="text" id="card" name="card" maxlength="16" required>
+            </div>
+
+            <div class="form-group">
+                <label for="expiry">Fecha de expiración:</label>
+                <input type="month" id="expiry" name="expiry" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" maxlength="3" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Pagar</button>
+        </form>
+    </div>
+</body>
+</html>
